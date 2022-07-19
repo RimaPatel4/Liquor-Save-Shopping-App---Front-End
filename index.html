@@ -1,0 +1,39 @@
+<h1> Welcome to the Liquor Saver Shopping App!</h1>
+<h2> To get started, select the open camera button and begin scanning our products <h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liquor Saver Shopping App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--<script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>-->
+    <script src="html5-qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+
+
+<body>
+    <div id="reader" style="width:500px"></div>
+    <div id="reader-results"></div>
+
+    <button onclick="getliquors()">Open Scanner</button>
+    <button onclick="calculate()">Calculate</button>
+    <label id="demo"></label>
+
+    
+
+    <script src="script.js"></script>
+    <table id="myTableData"  border="1" cellpadding="2">
+        <tr id="tablePrice">
+            <td>&nbsp;</td>
+            <td><b>Product Name</b></td>
+            <td><b>Price</b></td>
+        </tr>
+    </table>
+    &nbsp;
+    <div id="totalPrice"> </div>
+</body>
+</html>
